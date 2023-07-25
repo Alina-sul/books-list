@@ -1,0 +1,39 @@
+# Python related
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+*.env
+*.venv
+*.egg-info/
+dist/
+build/
+reports/
+*.log
+
+# Django related
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media
+
+# React / Node.js related
+node_modules/
+/build/
+.npm
+.npmrc
+.yarn-cache
+.yarnrc
+.yarn-integrity
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
