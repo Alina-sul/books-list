@@ -11,6 +11,7 @@ dist/
 build/
 reports/
 *.log
+*.idea/
 
 # Django related
 *.log
