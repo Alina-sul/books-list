@@ -9,9 +9,11 @@ export interface APIResponse {
 
 // Books
 export interface Book {
+  id: string;
   title: string;
   author: string;
   book_image: string;
+  description: string;
   // Allow any other properties
   [key: string]: any;
 }

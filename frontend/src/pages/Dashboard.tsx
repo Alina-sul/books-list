@@ -1,14 +1,12 @@
 import React from "react";
 
 // Components
-import BooksList from "components/BooksList";
-
+import Index from "components/BooksList";
 
 const Dashboard = () => {
-
   return (
     <div>
-      <BooksList />
+      <Index />
     </div>
   );
 };

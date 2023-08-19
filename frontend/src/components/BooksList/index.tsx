@@ -2,11 +2,13 @@ import React, { useMemo } from "react";
 import { useQuery } from "react-query";
 
 // Components
-import Book from "./Book";
+import Book from "components/Book";
 // Constants
 import { APIResponse, Book as BookType } from "utils/interfaces";
 // API
 import { getBooks } from "api/books";
+// Styles
+import "./index.scss";
 
 const BooksList = () => {
   const count = 10; // Replace with your desired count
@@ -19,10 +21,7 @@ const BooksList = () => {
 
   const booksList = useMemo(() => {
     const books = data?.data?.books as BookType[] | undefined;
-    console.log("books", data);
-
     return books?.map(({ id, title, author, description, book_image }) => {
-      console.log(id, title, author, description, book_image)
       return (
         <Book
           key={id}
@@ -45,8 +44,7 @@ const BooksList = () => {
   }
 
   return (
-    <div>
-      TEST
+    <div className={"books-list"}>
       {booksList}
     </div>
   );

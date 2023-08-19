@@ -1,6 +1,11 @@
 .books-list {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 50px;
+
+  & .ant-card {
+    margin-bottom: 30px;
+  }
 }
