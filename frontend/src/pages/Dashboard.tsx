@@ -1,15 +1,16 @@
-import React from 'react';
+import React from "react";
 
-interface DashboardProps {
-    
-}
+// Components
+import BooksList from "components/BooksList";
 
-const Dashboard = (props: DashboardProps) => {
-    return (
-        <div>
-            <h1>Dashboard</h1>
-        </div>
-    )
-}
+
+const Dashboard = () => {
+
+  return (
+    <div>
+      <BooksList />
+    </div>
+  );
+};
 
 export default Dashboard;
