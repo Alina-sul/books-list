@@ -1,6 +1,6 @@
 from ninja import NinjaAPI
 import requests
-from keys import NYT_API_KEY
+from .keys import NYT_API_KEY
 
 api = NinjaAPI()
 
