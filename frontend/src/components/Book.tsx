@@ -11,7 +11,7 @@ const Book = (props: BookType) => {
     <Card
       hoverable
       style={{ width: 240 }}
-      cover={<img height="auto" width="60" alt={title} src={cover} />}
+      cover={<img height="360" width="240" alt={title} src={cover} />}
     >
       <Meta title={title} description={description} />
     </Card>
