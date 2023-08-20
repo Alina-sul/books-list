@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books List</title>
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/scripts.js' %}"></script>
+</head>
+<body>
+    <div class="search-bar">
+        <input
+                type="search"
+                id="search-input"
+                name="search"
+                placeholder="Search for books..."
+                hx-target=".books-list"
+                hx-trigger="keyup changed delay:500ms, search"
+                hx-get="/api/books-htmx/"
+                hx-params="search"
+        />
+    </div>
+    <div hx-get="/api/books-htmx/" hx-trigger="load" hx-swap="innerHTML" class="books-list">
+        <!-- The content of this div will be updated with the list of books returned by the server -->
+    </div>
+</body>
+</html>
